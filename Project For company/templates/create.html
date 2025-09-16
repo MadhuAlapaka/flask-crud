@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="post">
+  <div class="mb-3">
+    <label>Title</label>
+    <input name="title" class="form-control"/>
+  </div>
+  <div class="mb-3">
+    <label>Content</label>
+    <textarea name="content" class="form-control"></textarea>
+  </div>
+  <button class="btn btn-success">Create</button>
+  <a href="{{ url_for('index') }}" class="btn btn-link">Cancel</a>
+</form>
+{% endblock %}
